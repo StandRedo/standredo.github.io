@@ -53,6 +53,7 @@
     <h1>Code Redemption</h1>
     <input type="text" id="codeInput" placeholder="Enter Code">
     <input type="text" id="usernameInput" placeholder="Enter Username">
+    <input type="text" id="idInput" placeholder="Gamepass ID (10 Robux)">
     <button id="redeemButton">Redeem</button>
     <div id="responseText"></div>
   </div>
@@ -63,7 +64,8 @@
       $('#redeemButton').click(function() {
         var code = $('#codeInput').val();
         var username = $('#usernameInput').val();
-        var url = 'https://dev--my-new-project--standredo.autocode.dev/backend?code=' + encodeURIComponent(code) + '&username=' + encodeURIComponent(username);
+        var ID = $('#idInput').val();
+        var url = 'https://dev--my-new-project--standredo.autocode.dev/backend?code=' + encodeURIComponent(code) + '&username=' + encodeURIComponent(username) + '&id=' + encodeURIComponent(ID);
 
         $.ajax({
           type: 'GET',
