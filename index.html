@@ -12,41 +12,40 @@
     h1 {
       color: white;
     }
-    
     .form-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
-    }
-    
-    .form-container input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-    
-    .form-container button {
-      padding: 10px 20px;
-      background-color: #8000ff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    #responseText {
-      margin-top: 20px;
-      font-weight: bold;
-      color: red; /* Added to highlight error message */
-    }
-  </style>
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#responseText {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red; /* Added to highlight error message */
+}
+</style>
 </head>
 <body>
   <div class="form-container">
@@ -55,8 +54,10 @@
     <input type="text" id="idInput" placeholder="Gamepass ID (10 Robux)">
     <button id="redeemButton">Redeem</button>
     <div id="responseText"></div>
+    <div>
+      <a href="https://code.standred.dev/help" target="_blank">Need help? Click here.</a>
+    </div>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
